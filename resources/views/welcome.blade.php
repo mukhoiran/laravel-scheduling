@@ -93,6 +93,21 @@
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
+                <hr>
+                <ol>
+                  <p>Scheduler for cleaning row DB users (everyminutes) :</p>
+                    <li>Create DB</li>
+                    <li>Migrate DB</li>
+                    <li>Insert Row on table users</li>
+                    <li>#php artisan make:command everyMinute</li>
+                    <li>Set up command actions</li>
+                    <li>Set up kernel scheduler</li>
+                    <li>check command exist (#php artisan list)</li>
+                    <li>test running command (#php artisan users:cleanup)</li>
+                    <li>check action already run / not</li>
+                    <li>run scheduler (#php artisan schedule:run)</li>
+                    <li>more info : https://laravel.com/docs/master/scheduling</li>
+                </ol>
             </div>
         </div>
     </body>
