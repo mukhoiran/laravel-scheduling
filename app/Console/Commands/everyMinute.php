@@ -3,6 +3,7 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\DB;
 
 class everyMinute extends Command
 {
@@ -11,14 +12,14 @@ class everyMinute extends Command
      *
      * @var string
      */
-    protected $signature = 'command:name';
+    protected $signature = 'users:cleanup';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'This will clean row on users table';
 
     /**
      * Create a new command instance.
@@ -38,5 +39,7 @@ class everyMinute extends Command
     public function handle()
     {
         //
+        DB::table('users')->delete();
+        echo "Operation completed ";
     }
 }
