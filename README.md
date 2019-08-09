@@ -1,2 +1,2 @@
 # laravel-scheduler
-Documentation create cron job with Laravel
+Create cron job with Laravel
